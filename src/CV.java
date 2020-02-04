@@ -10,18 +10,21 @@ public class CV {
 	}
 	
 	public static void affiche(){
-		Constructeur constructeurAbdessamad = new Constructeur("Chafry", "Abdessamad","Étudiant", "Aucune attente", 7);
+		
+		
+		String [] hello1 = { "yo","ye"};
+		Constructeur constructeurAbdessamad = new Constructeur("Chafry", "Abdessamad","Étudiant", "Aucune attente", 7,hello1);
 		
 		
 		
 		System.out.println("Nom : " + constructeurAbdessamad.getNom() + "\nPrénom : " + constructeurAbdessamad.getPrenom() + "\nFormation : " + constructeurAbdessamad.getFormation() 
-				+ "\nExpériences de travail : " + constructeurAbdessamad.getAnneExperience() + " ans" + "\nCompétence : " + constructeurAbdessamad + "\nAttentes vis à vis le cours 4B4 : "
+				+ "\nExpériences de travail : " + constructeurAbdessamad.getAnneExperience() + " ans" + "\nCompétence : " + constructeurAbdessamad.competence[0] + "\nAttentes vis à vis le cours 4B4 : "
 				+ constructeurAbdessamad.getAttente());
 		
-		Constructeur constructeurAshwin = new Constructeur("Chafry", "Abdessamad","Étudiant", "Aucune attente", 7);
+		Constructeur constructeurAshwin = new Constructeur("Chafry", "Abdessamad","Étudiant", "Aucune attente", 7,hello1);
 		
 		System.out.println("Nom : " + constructeurAshwin.getNom() + "\nPrénom : " + constructeurAshwin.getPrenom() + "\nFormation : " + constructeurAshwin.getFormation() 
-		+ "\nExpériences de travail : " + constructeurAshwin.getAnneExperience() + " ans" + "\nCompétence : " + constructeurAshwin + "\nAttentes vis à vis le cours 4B4 : "
+		+ "\nExpériences de travail : " + constructeurAshwin.getAnneExperience() + " ans" + "\nCompétence : " + constructeurAbdessamad.competence + "\nAttentes vis à vis le cours 4B4 : "
 		+ constructeurAshwin.getAttente());
 		
 	}

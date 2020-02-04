@@ -6,25 +6,16 @@ public class Constructeur {
 	public String formation;
 	public String attente;
 	public int anneExperience;
-	public String[] competence;
+	public String[] competence = new String [2];
 
-	
-	public Constructeur() {
-		nom = null;
-		prenom = null;
-		formation = null;
-		attente = null;
-		anneExperience = 0;
-		
-	}
-	public Constructeur(String nom, String prenom, String formation, String attente, int anneExperience
+	public Constructeur(String nom, String prenom, String formation, String attente, int anneExperience, String[] competence
 			) {
 		this.setNom(nom);
 		this.setPrenom(prenom);
 		this.setFormation(formation);
 		this.setAttente(attente);
 		this.setAnneExperience(anneExperience);
-		//this.setCompetence(competence);
+		this.setCompetence(competence);
 		
 	}
 	
@@ -55,6 +46,12 @@ public class Constructeur {
 
 	}
 	
+	public String [] getCompetence() {
+
+		return this.competence;
+
+	}
+	
 	public void setNom( String nom ) {
 
 		this.nom = nom;
@@ -78,6 +75,12 @@ public class Constructeur {
 	public void setAnneExperience( int anneExperience ) {
 
 		this.anneExperience = anneExperience;
+
+	}
+	
+	public void setCompetence( String [] competence) {
+
+		this.competence = competence;
 
 	}
 	
