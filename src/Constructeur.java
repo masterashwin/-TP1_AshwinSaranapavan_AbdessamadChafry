@@ -1,14 +1,24 @@
 
-public class contructeur {
+public class Constructeur {
 
-	private String nom;
-	private String prenom;
-	private String formation;
-	private String attente;
-	private int anneExperience;
+	public String nom;
+	public String prenom;
+	public String formation;
+	public String attente;
+	public int anneExperience;
+	public String[] competence;
 
-	public contructeur(String nom, String prenom, String formation, String attente, int anneExperience,
-			String[] competence) {
+	
+	public Constructeur() {
+		nom = null;
+		prenom = null;
+		formation = null;
+		attente = null;
+		anneExperience = 0;
+		
+	}
+	public Constructeur(String nom, String prenom, String formation, String attente, int anneExperience
+			) {
 		this.setNom(nom);
 		this.setPrenom(prenom);
 		this.setFormation(formation);
@@ -17,6 +27,7 @@ public class contructeur {
 		//this.setCompetence(competence);
 		
 	}
+	
 	
 	public String getNom() {
 
